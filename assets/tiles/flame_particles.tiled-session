@@ -1,0 +1,63 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "particles.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "flame_particles.tsx": {
+            "scaleInDock": 0.5,
+            "scaleInEditor": 1
+        },
+        "game_floor.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "particle_game_floor.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "particles.tmx": {
+            "scale": 1,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 450,
+                "y": 403
+            }
+        },
+        "particles_tiled_map.tsx": {
+            "scaleInDock": 0.5,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "C:/Users/tiger/OneDrive/Documents/GitHub/Flutter_Flame/flame_particles/assets/images/terrain",
+    "map.height": 10,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 64,
+    "map.tileWidth": 64,
+    "map.width": 6,
+    "openFiles": [
+        "particles.tmx"
+    ],
+    "project": "flame_particles.tiled-project",
+    "property.type": "object",
+    "recentFiles": [
+        "particles.tmx",
+        "flame_particles.tsx",
+        "particles_tiled_map.tsx",
+        "particle_game_floor.tsx",
+        "game_floor.tsx"
+    ],
+    "resizeMap.removeObjects": true,
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.margin": 16,
+    "tileset.spacing": 2,
+    "tileset.tileSize": {
+        "height": 64,
+        "width": 64
+    }
+}

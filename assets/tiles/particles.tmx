@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="9" height="13" tilewidth="64" tileheight="64" infinite="0" nextlayerid="4" nextobjectid="62">
+ <tileset firstgid="1" source="flame_particles.tsx"/>
+ <layer id="1" name="Background" width="9" height="13">
+  <data encoding="csv">
+4,5,5,5,5,5,5,5,6,
+34,17,8,8,8,8,8,16,35,
+37,20,8,8,8,8,8,19,38,
+7,8,8,8,8,8,8,8,9,
+7,8,8,8,8,8,8,8,9,
+7,8,8,8,8,8,8,8,9,
+7,8,8,8,8,8,8,8,9,
+7,8,8,8,8,8,8,8,9,
+7,8,8,8,8,8,8,8,9,
+34,17,8,8,8,8,8,16,35,
+37,20,8,8,8,8,8,19,29,
+10,11,11,11,11,11,11,11,12,
+13,14,14,14,14,14,14,14,15
+</data>
+ </layer>
+ <objectgroup id="3" name="Spawnpoints">
+  <object id="6" type="Tablet" x="480" y="604" width="64" height="64">
+   <properties>
+    <property name="playerSpawn" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="8" type="Tablet" x="32" y="604" width="64" height="64">
+   <properties>
+    <property name="playerSpawn" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="9" type="Tablet" x="32" y="92" width="64" height="64">
+   <properties>
+    <property name="playerSpawn" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="10" type="Tablet" x="480" y="92" width="64" height="64">
+   <properties>
+    <property name="playerSpawn" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="12" type="EnemySpawn" x="0" y="0" width="448" height="512">
+   <polygon points="128,128 448,128 448,192 512,192 512,576 448,576 448,640 128,640 128,576 64,576 64,192 128,192"/>
+  </object>
+ </objectgroup>
+</map>
