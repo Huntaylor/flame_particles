@@ -88,7 +88,7 @@ class GameWorld extends World with HasGameRef<MyGame> {
               ..debugColor = Colors.amber;
 
             // Top points: 128, 128 - 448, 128
-            // Bottom Points
+            // Bottom Points 128, 640 - 448, 640
 
             for (var i = 0; i < reversed.length; i++) {
               final rng = Random();
@@ -97,26 +97,39 @@ class GameWorld extends World with HasGameRef<MyGame> {
               final size = Vector2(
                   polygonComponent.position.x, polygonComponent.position.y);
 
-              final positionX = rng
-                      .nextInt(
-                        polygonComponent.position.x.floor(),
-                      )
-                      .floorToDouble() +
-                  size.x;
-              final positionY = rng2
-                      .nextInt(
-                        polygonComponent.position.y.floor(),
-                      )
-                      .floorToDouble() +
-                  size.y;
+              final positionX = (rng.nextDouble() + size.x) * 15;
+              final positionY = rng2.nextDouble() + size.y;
+              // final positionX = rng
+              //         .nextInt(
+              //           polygonComponent.position.x.floor(),
+              //         )
+              //         .floorToDouble() +
+              //     size.x;
+              // final positionY = rng2
+              //         .nextInt(
+              //           polygonComponent.position.y.floor(),
+              //         )
+              //         .floorToDouble() +
+              //     size.y;
 
               final skeleton = Skeleton(
                 position: Vector2(
-                  positionX + (size.x * rng.nextDouble()),
-                  positionY + (size.y * rng2.nextDouble()),
+                  positionX /*  + (size.x * rng.nextDouble()), */,
+                  positionY /*  + (size.y * rng2.nextDouble()), */,
                 ),
               );
-              add(skeleton);
+              while (
+                  skeleton.position.distanceTo(polygonComponent.position) < 0) {
+                print(
+                  skeleton.position.distanceTo(polygonComponent.position),
+                );
+                skeleton.position = Vector2(
+                  positionX + (size.x * rng.nextDouble()),
+                  positionY + (size.y * rng2.nextDouble()),
+                );
+              }
+
+              polygonComponent.add(skeleton);
             }
 
             addAll([/* skeleton ,*/ polygonComponent]);
