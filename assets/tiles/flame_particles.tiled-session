@@ -22,11 +22,11 @@
             "scaleInEditor": 1
         },
         "particles.tmx": {
-            "scale": 1,
+            "scale": 4,
             "selectedLayer": 1,
             "viewCenter": {
-                "x": 450,
-                "y": 403
+                "x": 146.25,
+                "y": 174.25
             }
         },
         "particles_tiled_map.tsx": {
